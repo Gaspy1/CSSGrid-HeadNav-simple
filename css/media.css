@@ -1,0 +1,39 @@
+/* mobile */
+.hp-tips{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+}
+
+.slider{
+    grid-column: 1/-1 ;
+}
+
+/* tablet */
+@media (min-width: 960px){
+    .hp-tips{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 1em;
+    }
+}
+
+/* desktop */
+@media (min-width: 1350px){
+    .hp-tips{
+        max-width: 1600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2em
+    }
+
+    .slider{
+        grid-column: 1/3;
+        grid-row: 1/3;
+        
+    }
+    .text-box{
+        z-index: 1;
+    }
+    
+}

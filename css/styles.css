@@ -1,0 +1,85 @@
+@layer reset, media, styles;
+
+@import url(normalize2.css) layer(reset);
+@import url(media.css) layer(media);
+
+@layer styles {
+    body {
+        margin: 0px;
+        background-color: rgb(230, 230, 230);
+    }
+    .main-header {
+        padding-left: 1em;
+    }
+    .hp-tips {
+        background-color: white;
+        padding: 1em;
+    }
+    .hp-tips img{
+        border-radius: .25em;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        display: block;
+    }
+    .slider{
+        margin: 0;
+    }
+    .slider__title {
+        margin-top: 0;
+    }
+    .slider__text-box {
+        background-color: white;
+        border-radius: .25em;
+        padding-top: 1em;
+    }
+    .link{
+        margin: 0px;
+        position: relative;
+    }
+    .link__label {
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+    .link > a {
+        display: block;
+        height: 100%;
+    }
+    .link__label > a {
+        pointer-events: all;
+        margin: 1em;
+    }
+    .button{
+        text-decoration: none;
+        border: 1px solid #0066b4;
+        background-color: #0075cc;
+        padding: 0.5em 1em;
+        border-radius: .25em;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+    }
+    a.button:hover {
+        background-color: #005ba0;
+    }
+    @media (min-width: 960px) {
+        .hp-tips__slider {
+            position: relative;
+        }
+        .slider__text-box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 2em;
+            margin-bottom: 2em;
+            padding: 1em;
+            width: 33%;
+            max-width: 25em;
+        }
+    }
+}
