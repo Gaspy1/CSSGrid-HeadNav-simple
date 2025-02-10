@@ -23,16 +23,16 @@
     .hp-tips{
         max-width: 1600px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
         gap: 2em
     }
 
     .slider{
         grid-column: 1/3;
-        grid-row: 1/3;
+        grid-row: 1/-1;
         
     }
-    .text-box{
+    .slider__text-box{
         z-index: 1;
     }
     
